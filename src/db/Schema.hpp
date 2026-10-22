@@ -2,8 +2,8 @@
 
 namespace todo {
 
-// Datas = unix epoch segundos UTC (INTEGER).
-inline constexpr const char* kSchema = R"sql(
+  // Datas = unix epoch segundos UTC (INTEGER).
+  inline constexpr const char* kSchema = R"sql(
 CREATE TABLE IF NOT EXISTS users (
     id            INTEGER PRIMARY KEY AUTOINCREMENT,
     email         TEXT    NOT NULL UNIQUE COLLATE NOCASE,
@@ -30,4 +30,4 @@ CREATE TABLE IF NOT EXISTS tasks (
 CREATE INDEX IF NOT EXISTS idx_tasks_user ON tasks(user_id);
 )sql";
 
-}  // namespace todo
+} // namespace todo
