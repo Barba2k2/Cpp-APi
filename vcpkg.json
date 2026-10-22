@@ -1,0 +1,12 @@
+{
+  "name": "todo-api",
+  "version-string": "0.1.0",
+  "dependencies": [
+    "cpp-httplib",
+    "sqlite3",
+    "jwt-cpp",
+    "libsodium",
+    "nlohmann-json",
+    "catch2"
+  ]
+}
