@@ -6,6 +6,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(httplib CONFIG REQUIRED)
 find_package(unofficial-sqlite3 CONFIG REQUIRED)
+find_package(SQLiteCpp CONFIG REQUIRED)
 find_package(jwt-cpp CONFIG REQUIRED)
 find_package(unofficial-sodium CONFIG REQUIRED)
 find_package(nlohmann_json CONFIG REQUIRED)
@@ -20,6 +21,7 @@ target_include_directories(todo_core PUBLIC src)
 target_link_libraries(todo_core PUBLIC
   httplib::httplib
   unofficial::sqlite3::sqlite3
+  SQLiteCpp
   jwt-cpp::jwt-cpp
   unofficial-sodium::sodium
   nlohmann_json::nlohmann_json)

@@ -4,6 +4,7 @@
   "dependencies": [
     "cpp-httplib",
     "sqlite3",
+    "sqlitecpp",
     "jwt-cpp",
     "libsodium",
     "nlohmann-json",
